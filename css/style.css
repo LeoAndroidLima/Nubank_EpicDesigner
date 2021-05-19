@@ -1090,7 +1090,7 @@ header {
   font-family: 'Sora', sans-serif;
   font-size: 36px;
   line-height: 120%;
-  color: #555456;
+  color: #988fa1;
   padding: 16px 24px;
   position: relative;
 }
@@ -1262,6 +1262,36 @@ header {
 }
 
 .bg-icon-mobile:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-time::after {
+  background-image: url("../../svg/icon-time.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-time:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url("../../svg/icon-config.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-config:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
