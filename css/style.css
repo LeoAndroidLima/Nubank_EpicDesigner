@@ -247,6 +247,28 @@
   }
 }
 
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 960px) {
+  .svg-invite {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
 h1 {
   color: #161617;
   font-family: 'Sora', sans-serif;
@@ -428,6 +450,16 @@ a:hover {
 .link:hover::after {
   width: 100%;
   background-color: #BB71D2;
+}
+
+.button-app {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.button-app:hover {
+  -webkit-filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)) drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
+          filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08)) drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271)) drop-shadow(0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04)) drop-shadow(0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729));
 }
 
 .s-0 {
@@ -1877,5 +1909,41 @@ header {
   100% {
     fill-opacity: 0.4;
   }
+}
+
+.fignu4-letter-u, .fignu4-letter-n {
+  -webkit-animation: fig4nu-letter 4s ease infinite alternate;
+          animation: fig4nu-letter 4s ease infinite alternate;
+}
+
+@-webkit-keyframes fig4nu-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes fig4nu-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
+
+.fignu5-ball1 {
+  -webkit-animation: translate-ball 4s ease infinite alternate;
+          animation: translate-ball 4s ease infinite alternate;
 }
 /*# sourceMappingURL=style.css.map */
